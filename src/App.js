@@ -1,8 +1,13 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Pages from "./pages/Pages";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar />
+      <Pages />
+    </div>
+  );
 }
 
 export default App;
