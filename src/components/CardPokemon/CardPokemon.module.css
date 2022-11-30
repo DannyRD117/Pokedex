@@ -10,8 +10,15 @@
   transform: scale(1.05);
 }
 
+.pokemon-card__header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 01.2rem;
+}
+
 .pokemon-card__image {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .pokemon-card__name {
@@ -21,12 +28,16 @@
 }
 
 .pokemon-card__number {
-  color: #ced4da;
+  color: #ddd;
 }
 
 .pokemon-card__name,
 .pokemon-card__number {
   font-size: 1.8rem;
+}
+.pokemon-card__types {
+  display: flex;
+  gap: 5px;
 }
 
 .normal {

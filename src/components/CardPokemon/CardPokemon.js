@@ -12,16 +12,21 @@ const CardPokemon = (props) => {
   const pokemonID = pokemon?.id;
   const types = pokemon?.types.map((type) => type.type.name);
 
+  const typesContent = types.map((type) => (
+    <Type className={styles[type]} name={type} />
+  ));
   return (
     <Fragment>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <div
+        <article
           className={`${styles[`pokemon-card`]} ${types && styles[types[0]]}`}
         >
-          <h3 className={styles["pokemon-card__name"]}>{pokemonName}</h3>
-          <p className={styles["pokemon-card__number"]}>N° {pokemonID}</p>
+          <div className={styles["pokemon-card__header"]}>
+            <h3 className={styles["pokemon-card__name"]}>{pokemonName}</h3>
+            <p className={styles["pokemon-card__number"]}>N° {pokemonID}</p>
+          </div>
           <div>
             <img
               className={styles["pokemon-card__image"]}
@@ -29,8 +34,8 @@ const CardPokemon = (props) => {
               alt={pokemonName}
             ></img>
           </div>
-          <Type />
-        </div>
+          <div className={styles["pokemon-card__types"]}>{typesContent}</div>
+        </article>
       )}
     </Fragment>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Navbar.module.css";
 import pokeballLogo from "../../assets/images/logo.png";
-import searchIcon from "../../assets/icons/search-outline.svg";
+import searchIcon from "../../assets/icons/search.svg";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 

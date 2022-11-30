@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Type.module.css";
 
 const Type = (props) => {
   return (
-    <div className={props.style}>
-      <p>Type 1</p>
+    <div className={`${props.className} ${styles["type-box"]}`}>
+      <p>{props.name}</p>
     </div>
   );
 };
