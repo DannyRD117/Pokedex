@@ -12,7 +12,7 @@ const CardPokemon = (props) => {
   const pokemonID = pokemon?.id;
   const types = pokemon?.types.map((type) => type.type.name);
 
-  const typesContent = types.map((type) => (
+  const typesContent = types?.map((type) => (
     <Type className={styles[type]} name={type} />
   ));
   return (
