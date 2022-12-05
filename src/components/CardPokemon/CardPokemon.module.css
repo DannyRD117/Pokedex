@@ -1,10 +1,11 @@
 .pokemon-card {
-  background-color: darkblue;
   border: 8px solid #ffde00;
   border-radius: 8px;
   padding: 3.2rem 1.6rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .pokemon-card:hover {
@@ -15,12 +16,6 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 01.2rem;
-}
-
-.pokemon-card__image {
-  max-width: 100%;
-  margin-bottom: 1rem;
-  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.7));
 }
 
 .pokemon-card__name {
@@ -37,6 +32,13 @@
 .pokemon-card__number {
   font-size: 1.8rem;
 }
+
+.pokemon-card__image {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.7));
+}
+
 .pokemon-card__types {
   display: flex;
   gap: 5px;

@@ -7,7 +7,7 @@ const PokemonsBox = (props) => {
   return (
     <div className={styles["pokemon-box"]}>
       {pokemons?.results.map((pokemon) => (
-        <CardPokemon name={pokemon.name} />
+        <CardPokemon key={pokemon.name} name={pokemon.name} />
       ))}
     </div>
   );
